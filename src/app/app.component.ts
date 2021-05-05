@@ -11,12 +11,12 @@ import { RestartDialogComponent } from './restart-dialog/restart-dialog.componen
 export class AppComponent implements OnInit {
 
   cardImages = [
-    'pDGNBK9A0sk',
-    'fYDrhbVlV1E',
-    'qoXgaF27zBc',
-    'b9drVB7xIOI',
-    'TQ-q5WAVHj0',
-    'yOYuSSK8neg',
+    // 'pDGNBK9A0sk',
+    // 'fYDrhbVlV1E',
+    // 'qoXgaF27zBc',
+    // 'b9drVB7xIOI',
+    // 'TQ-q5WAVHj0',
+    // 'yOYuSSK8neg',
     'MdqpSMOcDPs',
     'ZM4FxGZ0pWs'
   ];
