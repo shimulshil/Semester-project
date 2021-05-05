@@ -1,0 +1,10 @@
+<ion-card>
+<div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
+  <div class="back">
+      <img src="assets/climate.jpg">
+  </div>
+  <div class="front">
+      <img [src]="'https://source.unsplash.com/' + data.imageId + '/200x300'">
+  </div>
+</div>
+</ion-card>

@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+// import { GameCardComponent } from './game-card/game-card.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'game-card',
+    loadChildren: () => import('./game-card/game-card.component').then( m => m.GameCardComponent)
   },
   {
-    path: '',
-    redirectTo: 'home',
+    path: 'game-card',
+    redirectTo: 'game-card',
     pathMatch: 'full'
   },
 ];

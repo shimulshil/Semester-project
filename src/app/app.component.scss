@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 2vw;
+
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(4, 100px);
+        grid-gap: 0px;
+    }
+    .padding{
+        padding-top: 10px;
+    }
+    .text{
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center;
+        font-size: large;
+    }
+}
