@@ -1,0 +1,58 @@
+<ion-header>
+  <!-- logo -->
+ <ion-toolbar  >
+   <ion-grid> 
+     <ion-row> 
+       <ion-col> 
+       <ion-avatar routerLink="/only-zone">
+    <img src="assets\icon\grey70_logo-70hWhite.svg">
+   </ion-avatar> 
+  </ion-col>
+  <ion-col class="ion-padding-top"> 
+   <ion-text> Mental Shower</ion-text>
+  </ion-col>
+  <ion-col> </ion-col>
+  </ion-row>
+  </ion-grid>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="login">
+    <div class="login-section ion-padding">
+        <div class="heading ion-padding">
+            <h1>Log In </h1>
+            <p>Log into Account to Continue</p>
+        </div>
+        <div class="login-form ion-padding">
+            
+            <div class="form-input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Email</ion-label>
+                    <ion-input type="email"></ion-input>
+                </ion-item>
+            </div>
+            
+            <div class="form-input">
+                <ion-icon name="key-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </div>
+            
+        </div>
+        
+         <div class="action-button ion-padding">
+            <ion-button size="large" class="login-button" >Log In</ion-button>
+            <h3 routerLink="/signup">Doesn't have a account? <span>Sign Up</span></h3>
+        </div>
+    </div>
+  </ion-card>
+
+  
+</ion-content>
+
+
+
