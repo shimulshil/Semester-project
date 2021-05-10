@@ -2,45 +2,64 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  
   {
-    path: 'room-zone-select',
-    loadChildren: () => import('./pages/room-zone-select/room-zone-select.module').then( m => m.RoomZoneSelectPageModule)
+    path: 'tabs',
+    loadChildren: () => import('./pages/the-tabs/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'zone-status',
-    loadChildren: () => import('./pages/zone-status/zone-status.module').then( m => m.ZoneStatusPageModule)
+    path: 'tab1',
+    loadChildren: () => import('./pages/the-tabs/tab1/tab1.module').then(m => m.Tab1PageModule)
   },
   {
-    path: 'change-clima',
-    loadChildren: () => import('./pages/change-clima/change-clima.module').then( m => m.ChangeClimaPageModule)
+    path: 'tab2',
+    loadChildren: () => import('./pages/the-tabs/tab2/tab2.module').then(m => m.Tab2PageModule)
   },
   {
-    path: 'only-zone',
-    loadChildren: () => import('./pages/only-zone/only-zone.module').then( m => m.OnlyZonePageModule)
+    path: 'tab3',
+    loadChildren: () => import('./pages/the-tabs/tab3/tab3.module').then(m => m.Tab3PageModule)
   },
+
   {
-    path: 'poll',
-    loadChildren: () => import('./pages/poll/poll.module').then( m => m.PollPageModule)
+    path: 'start-screen',
+    loadChildren: () => import('./pages/start-screen/start-screen.module').then( m => m.StartScreenPageModule)
   },
-  {
-    path: 'game1',
-    loadChildren: () => import('./pages/game1/game1.module').then( m => m.Game1PageModule)
-  },
-  
   {
     path: '',
-    loadChildren: () => import('./pages/load-logo/load-logo.module').then( m => m.LoadLogoPageModule)
+    loadChildren: () => import('./pages/opening-screen/opening-screen.module').then( m => m.OpeningScreenPageModule)
   },
   {
-    path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+    path: 'sign-in',
+    loadChildren: () => import('./pages/sign-in/sign-in.module').then( m => m.SignInPageModule)
   },
   {
-    path: 'help',
-    loadChildren: () => import('./pages/help/help.module').then( m => m.HelpPageModule)
+    path: 'welcome-screen',
+    loadChildren: () => import('./pages/welcome-screen/welcome-screen.module').then( m => m.WelcomeScreenPageModule)
   },
-  
+  {
+    path: 'pick-zone',
+    loadChildren: () => import('./pages/pick-zone/pick-zone.module').then( m => m.PickZonePageModule)
+  },
+  {
+    path: 'temp-sum',
+    loadChildren: () => import('./pages/temp-sum/temp-sum.module').then( m => m.TempSumPageModule)
+  },
+  {
+    path: 'zone-screen',
+    loadChildren: () => import('./pages/zone-screen/zone-screen.module').then( m => m.ZoneScreenPageModule)
+  },
+  {
+    path: 'adjust-temp',
+    loadChildren: () => import('./pages/adjust-temp/adjust-temp.module').then( m => m.AdjustTempPageModule)
+  },
+  {
+    path: 'system-solution',
+    loadChildren: () => import('./pages/system-solution/system-solution.module').then( m => m.SystemSolutionPageModule)
+  },
+  {
+    path: 'systemreseted',
+    loadChildren: () => import('./pages/systemreseted/systemreseted.module').then( m => m.SystemresetedPageModule)
+  }
+
 ];
 @NgModule({
   imports: [

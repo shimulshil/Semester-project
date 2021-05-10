@@ -1,0 +1,84 @@
+<ion-header>
+        <ion-toolbar >
+          <ion-buttons slot="start">
+           <ion-back-button defaultHref ="welcome-screen"></ion-back-button>
+          </ion-buttons>         
+          <ion-title>Mental Shower</ion-title>
+        </ion-toolbar>
+      </ion-header>
+     
+
+<ion-content [fullscreen]="true">
+  <ion-text><h2>Change Clima</h2></ion-text>
+  <ion-grid > 
+    <ion-row class="maria-tab1"> 
+  <ion-col> 
+  <ion-list>  
+   <ion-label >Temperature</ion-label>
+   <ion-item>
+     <ion-range min="1" max="5" step="1" value="1" snaps color="secondary"> 
+       <ion-icon slot="start"src="../assets/icon/temperature.svg" size="small" ></ion-icon>
+       <ion-icon slot="end"src="../assets/icon/temperature.svg" size="large"></ion-icon>
+     </ion-range>
+   </ion-item>
+
+   <ion-label >Air Flow</ion-label>
+    <ion-item>
+     <ion-range min="1" max="5" step="1" value="1" snaps color="secondary"> 
+       <ion-icon slot="start" src="../assets/icon/air-flow.svg" size="small" ></ion-icon>
+       <ion-icon slot="end" src="../assets/icon/air-flow.svg" size="large"></ion-icon>
+     </ion-range>
+   </ion-item>
+
+   <ion-label >Humidity</ion-label>
+    <ion-item>
+     <ion-range min="1" max="5" step="1" value="1" snaps color="secondary"> 
+       <ion-icon slot="start" src="../assets/icon/humidity.svg" size="small" ></ion-icon>
+       <ion-icon slot="end" src="../assets/icon/humidity.svg" size="large"></ion-icon>
+     </ion-range>
+   </ion-item>
+
+   <ion-label>CO2</ion-label>
+    <ion-item>
+     <ion-range min="1" max="5" step="1" value="1" snaps color="secondary"> 
+       <ion-icon slot="start" src="../assets/icon/co2.svg" size="large" ></ion-icon>
+       <ion-icon slot="end" src="../assets/icon/co2.svg" size="small"></ion-icon>
+     </ion-range>
+   </ion-item>
+
+  </ion-list>
+  
+</ion-col>
+</ion-row>
+</ion-grid>
+<div class="ion-padding"> 
+    
+  <ion-button expand="block" routerLink="/tab3" >RESET CLIMA</ion-button>
+  <ion-text class="instructions" ><p>*The changes will take some minutes</p></ion-text>
+  </div>
+  
+  <!--script-->
+  <script>
+   const dualRange = document.querySelector('#dual-range');
+   dualRange.value = { lower: 33, upper: 60 };
+ </script>
+    
+</ion-content>
+<footer>
+  <div><ion-tab-bar slot="bottom" >
+    <ion-tab-button href="tab3">
+      <ion-icon src="./assets/icon/home.svg"></ion-icon>
+     
+    </ion-tab-button>
+  
+    <ion-tab-button href="tab1">
+      <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
+     
+    </ion-tab-button>
+  
+    <ion-tab-button href="tab2">
+      <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
+     
+    </ion-tab-button>
+  </ion-tab-bar> </div>
+</footer>
