@@ -3,7 +3,7 @@
     <ion-avatar >
       <img src="assets\icon\grey70_logo-70hWhite.svg">
      </ion-avatar> 
-  <ion-title><br>
+  <ion-title>
   <h4>Mental Shower</h4>
   </ion-title>
   
@@ -36,7 +36,7 @@
   <ion-col> 
    <ion-text><p>You need to select a room, the information will be at the door.</p></ion-text>   
   <ion-item>
-    <ion-icon slot="start"src="../assets/icon/room.svg" class="#C4C4C4"></ion-icon>
+    <ion-icon slot="start"src="../assets/icon/room.svg" ></ion-icon>
     <ion-label >Rooms</ion-label>
     <ion-select interface="popover">
       <ion-select-option value="room1">R-1</ion-select-option>
@@ -48,7 +48,7 @@
   </ion-item>
   <ion-text><p>Inside the room, you need select your Zone that is the number of the table.</p></ion-text>
   <ion-item>
-    <ion-icon slot="start"src="../assets/icon/table.svg" class="#C4C4C4"></ion-icon>
+    <ion-icon slot="start"src="../assets/icon/table.svg" ></ion-icon>
     <ion-label>Zones</ion-label>
     <ion-select interface="popover">
       <ion-select-option value="zone1">Z-1</ion-select-option>
@@ -60,8 +60,8 @@
   
   <ion-text><p>Pick your chair, they are only 4 per table.</p></ion-text>
   <ion-item>
-    <ion-icon slot="start"src="../assets/icon/chair.svg" class="#C4C4C4"></ion-icon>
-    <ion-label>Chair</ion-label>
+    <ion-icon slot="start"src="../assets/icon/chair.svg" ></ion-icon>
+    <ion-label>Chairs</ion-label>
     <ion-select interface="popover">
       <ion-select-option value="chair1">Ch-1</ion-select-option>
       <ion-select-option value="chair2">Ch-2</ion-select-option>
@@ -72,13 +72,10 @@
   </ion-col>
 </ion-row>
 </ion-grid>
-  
-  <ion-button routerLink="/pick-zone"  expand="block">Save</ion-button>
-  
-  
-  
 
- </ion-content>
+<ion-button routerLink="/pick-zone"  expand="block" >
+  SAVE</ion-button>
+</ion-content>
 <footer>
   <div><ion-tab-bar slot="bottom" >
     <ion-tab-button href="tab3">

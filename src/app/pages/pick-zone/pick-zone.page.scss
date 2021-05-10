@@ -18,5 +18,66 @@ ion-item{
   font-size: 12px;
 }
 ion-chip{
-background-color:  #A3E6DE;
+  background-color:  #A3E6DE;
+  width: 70px;
+  font-size: 10px;
+  text-align: center;
+  }
+
+
+ion-tab-bar{
+  height: 65px !important;
+  display: flex;
+  align-items: center;
 }
+
+
+
+.toolbar-container{
+  border: none;
+}
+
+
+
+ion-tab-button ion-icon:hover{
+  // css styling for hover state
+  color: #C4C4C4;
+  }   
+
+  ion-tab-button ion-icon {
+    
+    color:#1e1e1e;
+    
+  }
+
+  ion-fab-button ion-fab{
+    color: #C4C4C4;
+  }
+  ion-fab-button{
+    color: #C4C4C4;
+  }
+
+  a.button-native{
+    color: #C4C4C4;
+  }
+  
+  ion-tab-button{
+    height: 30px;
+    color:black;
+
+}
+
+a.ion-tab-button{
+  height: 40px;
+  color:#C4C4C4;
+
+}
+
+ion-avatar .img{
+width: 35px;
+padding-left:16px;
+}
+
+
+
+

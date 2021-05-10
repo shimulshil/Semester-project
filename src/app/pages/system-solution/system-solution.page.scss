@@ -10,7 +10,7 @@ ion-item{
 }
 
 .maria-tab1{
-  padding:16px;
+  padding: 8px;
   border-radius: 26px;
   border: 1px solid #C4C4C4;
 }
@@ -19,4 +19,8 @@ ion-item{
 }
 ion-chip{
 background-color:  #A3E6DE;
+}
+.range-knob-handle{
+  left: 50% !important;
+  transform: translateX(-50%);
 }
