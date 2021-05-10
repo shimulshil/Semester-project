@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 2vw;
+
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 100px);
+        grid-gap: 25px;
+    }
+    .padding{
+        padding-top: 17px;
+        padding-bottom: 35px;
+        padding-right: 19px;
+    }
+    .text{
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center;
+        font-size: large;
+    }
+
+    .note{
+        padding-bottom: 20px;
+        width: 90px;
+        height: 120px;
+        margin-top: -159px;
+        margin-left: 265px;
+        text-align:left;
+        color:yellow;
+        background-image: url("/assets/card-top.jpg");
+
+    }
+
+}
+

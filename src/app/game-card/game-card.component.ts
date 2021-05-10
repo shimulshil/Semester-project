@@ -3,6 +3,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 // import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CardData } from '../card-data.model';
 import { Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-game-card',
@@ -43,3 +44,4 @@ export class GameCardComponent implements OnInit {
   ngOnInit(): void {}
 
 }
+

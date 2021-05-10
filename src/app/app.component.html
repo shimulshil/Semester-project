@@ -1,26 +1,5 @@
 <ion-app>
   <ion-router-outlet>
-    <ion-toolbar color="primary" class="text-center">
-      <h1>Memory Game</h1>
-    </ion-toolbar>
-    <ion-card>
-    <div>
-      <p class="text-center"></p>
-      <div class="grid padding">
-        <app-game-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
-        </app-game-card>
-      </div>
-    </div>
-    </ion-card>
-    
-    <div class="padding">
-      <ion-card>
-      <p class="text">Test your memory to play the Game</p>
-    </ion-card>
-    <ion-card-content>
-      <ion-button>Home</ion-button>
-      <ion-button>Exit</ion-button>
-  </ion-card-content>
-  </div>
+    <app-game></app-game>
   </ion-router-outlet>
 </ion-app>

@@ -1,0 +1,53 @@
+  <ion-header>
+    <ion-toolbar  >
+      <ion-grid> 
+        <ion-row> 
+          <ion-col> 
+            <ion-avatar >
+              <img src="assets\icon\grey70_logo-70hWhite.svg">
+            </ion-avatar> 
+          </ion-col>
+          <ion-col class="ion-padding-top"> 
+            <ion-text> Mental Shower</ion-text>
+          </ion-col>
+          <ion-col> </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  <ion-tabs  class="ion-padding-bottom">
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button href="room-zone-select">
+        <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
+    
+      <ion-tab-button href="change-clima">
+        <ion-icon src="./assets/icon/temp2.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
+    
+      <ion-tab-button href="poll">
+        <ion-icon src="./assets/icon/poll2.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+    
+  <ion-card>
+    <div>
+      <p class="text-center"></p>
+      <div class="grid padding">
+        <app-game-card *ngFor="let c of cards; let idx=index" [data]="c" (cardClicked)="cardClicked(idx)">
+        </app-game-card>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-card class="note">Game Rules:
+    <p>Read the Text</p>
+    <p>Matching 2 Card</p>
+    <!-- <li>
+      Read the text
+    </li>
+    <li>
+      Matching 2 card.
+    </li> -->
+  </ion-card>
