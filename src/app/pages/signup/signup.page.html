@@ -1,23 +1,13 @@
 <ion-header>
-  <!-- logo -->
- <ion-toolbar  >
-   <ion-grid> 
-     <ion-row> 
-       <ion-col> 
-       <ion-avatar routerLink="/only-zone">
-    <img src="assets\icon\grey70_logo-70hWhite.svg">
-   </ion-avatar> 
-  </ion-col>
-  <ion-col class="ion-padding-top"> 
-   <ion-text> Mental Shower</ion-text>
-  </ion-col>
-  <ion-col> </ion-col>
-  </ion-row>
-  </ion-grid>
- </ion-toolbar>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref ="only-zone"></ion-back-button>
+    </ion-buttons>         
+    <ion-title>Mental Shower</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <ion-card class="signup">
     <div class="signup-section ion-padding">
         <div class="heading ion-padding">
@@ -78,4 +68,21 @@
 </ion-content>
 
 
-
+<footer>
+  <div><ion-tab-bar slot="bottom" >
+    <ion-tab-button href="tab3">
+      <ion-icon src="./assets/icon/home.svg"></ion-icon>
+     
+    </ion-tab-button>
+  
+    <ion-tab-button href="tab1">
+      <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
+     
+    </ion-tab-button>
+  
+    <ion-tab-button href="tab2">
+      <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
+     
+    </ion-tab-button>
+  </ion-tab-bar> </div>
+</footer>
