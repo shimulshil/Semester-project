@@ -33,9 +33,10 @@
                      <ion-input type="text"
                       class="form-control"
                       id="name"
-                      required
+                      name="name"
                       [(ngModel)]="user.name"
-                      name="name">
+                      required
+                      #name="ngModel">
                     </ion-input>
                 </ion-item>
             </div>
@@ -47,9 +48,10 @@
                     <ion-input type="email"
                       class="form-control"
                       id="email"
-                      required
+                      name="email"
                       [(ngModel)]="user.email"
-                      name="email">
+                      required
+                      #email="ngModel">
                     </ion-input>
                 </ion-item>
             </div>
@@ -61,9 +63,10 @@
                     <ion-input type="phone"
                       class="form-control"
                       id="phone"
-                      required
+                      name="phone"
                       [(ngModel)]="user.mobile"
-                      name="phone">
+                      required
+                      #mobile="ngModel">
                     </ion-input>
                 </ion-item>
             </div>
@@ -75,9 +78,10 @@
                     <ion-input type="password"
                       class="form-control"
                       id="password"
-                      required
+                      name="password"
                       [(ngModel)]="user.password"
-                      name="password"></ion-input>
+                      required
+                      #name="ngModel"></ion-input>
                 </ion-item>
             </div>
             
