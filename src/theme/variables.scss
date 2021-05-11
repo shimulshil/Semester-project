@@ -1,20 +1,55 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$app-primary: mat-palette($mat-indigo);
+$app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$app-theme: mat-light-theme((
+  color: (
+    primary: $app-primary,
+    accent: $app-accent,
+    warn: $app-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($app-theme);
+
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #33c5b4;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #cccccc;
+  --ion-color-primary-tint: #ffffff;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary: #37B6A7;
   --ion-color-secondary-rgb: 61, 194, 255;
-  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast: #299487;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
   --ion-color-secondary-shade: #36abe0;
   --ion-color-secondary-tint: #50c8ff;
@@ -68,9 +103,9 @@
   --ion-color-medium-tint: #9d9fa6;
 
   /** light **/
-  --ion-color-light: #f4f5f8;
+  --ion-color-light:#37B6A7;
   --ion-color-light-rgb: 244, 245, 248;
-  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast: #fcfcfc;
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
@@ -234,3 +269,85 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+ion-tab-bar{
+  height: 65px !important;
+  display: flex;
+  align-items: center;
+}
+
+ion-content{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.header-ios ion-toolbar{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+.ion-header{
+  height: 70px;
+}
+
+
+.toolbar-container{
+  border: none;
+}
+
+
+
+ion-tab-button ion-icon:hover{
+  // css styling for hover state
+  color: #C4C4C4;
+  }   
+
+  ion-tab-button ion-icon {
+    
+    color:#1e1e1e;
+    
+  }
+
+  ion-fab-button ion-fab{
+    color: #C4C4C4;
+  }
+  ion-fab-button{
+    color: #C4C4C4;
+  }
+
+  a.button-native{
+    color: #C4C4C4;
+  }
+  
+  ion-tab-button{
+    height: 30px;
+    color:black;
+
+}
+
+a.ion-tab-button{
+  height: 40px;
+  color:#C4C4C4;
+
+}
+
+ion-avatar .img{
+width: 35px;
+padding-left:16px;
+}
+
+
+ion-button{
+  --ion-color-secondary-contrast: #299487;
+  border-radius: 6px;
+  --ion-text-color: #ffffff !important;
+}
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
