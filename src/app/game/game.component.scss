@@ -22,18 +22,31 @@
         text-align: center;
         font-size: large;
     }
-
-    .note{
-        padding-bottom: 20px;
-        width: 90px;
-        height: 120px;
-        margin-top: -159px;
-        margin-left: 265px;
-        text-align:left;
-        color:yellow;
-        background-image: url("/assets/card-top.jpg");
-
+    .game{
+        padding-bottom: 19px;
+        /* width: 90px; */
+        height: -68px;
+        margin-top: -508px;
+        margin-left: 10px;
+        text-align: left;
+        visibility: hidden;
     }
+    .note{
+            margin-top: 301px;
+            margin-left: 250px;
+            text-align: left;
+            color: black;
+         }
+
+    // .note{
+    //     width: 90px;
+    //     height: 120px;
+    //     margin-top: 316px;
+    //     margin-left: 267px;
+    //     text-align: left;
+    //     color: black;
+    //         }
+    
 
 }
 
