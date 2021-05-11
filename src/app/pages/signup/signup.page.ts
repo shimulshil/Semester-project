@@ -12,7 +12,7 @@ export class SignupPage implements OnInit {
   user: User = {
     name: '',
     email: '',
-
+    mobile: '',
     password: '',
   };
   submitted = false;
