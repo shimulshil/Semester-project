@@ -1,20 +1,42 @@
-<ion-header [translucent]="true">
+<ion-header>
+  <!--logo -->
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-grid> 
+      <ion-row> 
+        <ion-col> 
+        <ion-avatar >
+     <img src="assets\icon\grey70_logo-70hWhite.svg">
+    </ion-avatar> 
+   </ion-col>
+   <ion-col class="ion-padding-top"> 
+    <ion-text> Mental Shower</ion-text>
+   </ion-col>
+   <ion-col> </ion-col>
+   </ion-row>
+   </ion-grid>
   </ion-toolbar>
-</ion-header>
+ </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+   <ion-tabs  class="ion-padding-bottom">
+     <ion-tab-bar slot="bottom" >
+       <ion-tab-button href="room-zone-select">
+         <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+       </ion-tab-button>
+   
+       <ion-tab-button href="change-clima">
+         <ion-icon src="./assets/icon/temp2.svg" class="ion-padding-top"></ion-icon>
+       </ion-tab-button>
+   
+       <ion-tab-button href="poll">
+         <ion-icon src="./assets/icon/poll2.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button> 
+
+        <ion-tab-button (click)="notifications()"> 
+          <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
+            <ion-badge id="notifications-badge" color="success">2</ion-badge>         
+        </ion-tab-button>
+       
+     </ion-tab-bar>
+     </ion-tabs> 
+    
