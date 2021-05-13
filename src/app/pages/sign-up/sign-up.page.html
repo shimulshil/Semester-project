@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref ="tab3"></ion-back-button>
+    </ion-buttons>         
+    <ion-title>Mental Shower</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="signup">
+    <div class="signup-section ion-padding">
+        <div class="heading ion-padding">
+            <h1>SignUp</h1>
+            <p>Create Account to Continue</p>
+        </div>
+        <div class="signup-form ion-padding">
+            <div class="form-input">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Name</ion-label>
+                    <ion-input type="name"></ion-input>
+                </ion-item>
+            </div>
+            <div class="form-input">
+                <ion-icon name="mail-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Email</ion-label>
+                    <ion-input type="email"></ion-input>
+                </ion-item>
+            </div>
+            <div class="form-input">
+                <ion-icon name="call-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Mobile No.</ion-label>
+                    <ion-input type="mobile"></ion-input>
+                </ion-item>
+            </div>
+            <div class="form-input">
+                <ion-icon name="key-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </div>
+            <div class="form-input">
+                <ion-icon name="key-outline"></ion-icon>
+                <ion-item>
+                    <ion-label position="floating">Confirm Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+            </div>
+        </div>
+        <div class="checkbox">
+          <ion-item>
+            <ion-label>I accept terms & conditions.</ion-label>
+            <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+          </ion-item>
+        </div>
+         <div class="action-button ion-padding">
+            <ion-button size="large" class="signup-button" >SignUp</ion-button>
+            <h3 routerLink="/login">Already have a account? <span>LogIn</span></h3>
+        </div>
+    </div>
+  </ion-card>
+
+  
+</ion-content>
+
+
+

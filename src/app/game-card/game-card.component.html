@@ -1,3 +1,4 @@
+
 <ion-card-content>
 
   <div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
@@ -5,7 +6,6 @@
         <img src="assets/card-top.jpg">
     </div>
     <div class="front">
-        <!-- <img [src]="'https://source.unsplash.com/' + data.imageId + '/200x300'"> -->
         <img [src]="data.imageId">
   
     </div>

@@ -12,9 +12,10 @@
         grid-gap: 25px;
     }
     .padding{
-        padding-top: 17px;
+        padding-top: 31px;
         padding-bottom: 35px;
         padding-right: 19px;
+        margin-top: -27px;
     }
     .text{
         font-style: italic;
@@ -22,31 +23,70 @@
         text-align: center;
         font-size: large;
     }
+
+    .frame{
+        margin-top: -6px;
+        margin-bottom: -35px;
+    }
     .game{
-        padding-bottom: 19px;
-        /* width: 90px; */
-        height: -68px;
-        margin-top: -508px;
-        margin-left: 10px;
-        text-align: left;
-        visibility: hidden;
+        padding-bottom: 9px;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+
     }
     .note{
-            margin-top: 301px;
-            margin-left: 250px;
-            text-align: left;
-            color: black;
+        margin-bottom: 117px;
+        margin-left: 249px;
+        text-align: center;
+        color: black;
+        margin-top: -127px;
          }
 
-    // .note{
-    //     width: 90px;
-    //     height: 120px;
-    //     margin-top: 316px;
-    //     margin-left: 267px;
-    //     text-align: left;
-    //     color: black;
-    //         }
-    
-
+          
+          ion-tab-button ion-icon:hover{
+            // css styling for hover state
+            color: #C4C4C4;
+            }   
+          
+            ion-tab-button ion-icon {
+              
+              color:#1e1e1e;
+              
+            }
+          
+            ion-fab-button ion-fab{
+              color: #C4C4C4;
+            }
+            ion-fab-button{
+              color: #C4C4C4;
+            }
+          
+            a.button-native{
+              color: #C4C4C4;
+            }
+            
+            ion-tab-button{
+              height: 40px;
+              color:black;
+          
+          }
+          
+          a.ion-tab-button{
+            height: 40px;
+            color:#C4C4C4;
+          
+          }
+          
+          ion-avatar .img{
+          width: 35px;
+          padding-left:16px;
+          }
+          
+          
+          
+          
+          
+        
 }
 

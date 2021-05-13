@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
-// import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CardData } from '../card-data.model';
 import { Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
