@@ -50,27 +50,32 @@
   
     <div class="ion-padding"> 
      
-  <ion-button expand="block" routerLink="/temp-sum" >UPDATE CLIMA</ion-button>
-  <ion-text  ><p>*For update the clima you need first  <b routerLink="/sign-up"> SIGN UP</b> as user and  <b routerLink="/login">LOGIN </b> </p></ion-text>
+  <ion-button expand="block" routerLink="/sign-up" >UPDATE CLIMA</ion-button>
+  <ion-text  ><p>*For update the clima you need first  <b routerLink="/sign-up" class="color"> SIGN UP</b> as user and  <b routerLink="/login" class="color">LOGIN </b> </p></ion-text>
   </div>
   </ion-content>
   
 
   <footer>
-    <div><ion-tab-bar slot="bottom" >
-      <ion-tab-button href="tab3">
-        <ion-icon src="./assets/icon/home.svg"></ion-icon>
-       
-      </ion-tab-button>
+    <div>
+      <ion-tab-bar slot="bottom" >
+        <ion-tab-button href="opening-screen">
+          <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
     
-      <ion-tab-button href="tab1">
-        <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
-       
-      </ion-tab-button>
-    
-      <ion-tab-button href="tab2">
-        <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
-       
-      </ion-tab-button>
-    </ion-tab-bar> </div>
+        <ion-tab-button href="game">
+          <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
+<!--     
+        <ion-tab-button href="poll">
+          <ion-icon src="./assets/icon/poll2.svg" class="ion-padding-top"></ion-icon>
+         </ion-tab-button>  -->
+ 
+         <ion-tab-button (click)="notifications()"> 
+           <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
+             <ion-badge id="notifications-badge" color="success">2</ion-badge>         
+         </ion-tab-button>
+        
+      </ion-tab-bar>
+  </div>
   </footer>

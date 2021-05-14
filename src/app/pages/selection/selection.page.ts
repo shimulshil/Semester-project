@@ -3,12 +3,12 @@ import { PopoverController } from '@ionic/angular';
 import { NotificationsComponent } from 'src/app/notifications/notifications.component';
 
 @Component({
-  selector: 'app-zonastatus',
-  templateUrl: './zonastatus.page.html',
-  styleUrls: ['./zonastatus.page.scss'],
+  selector: 'app-selection',
+  templateUrl: './selection.page.html',
+  styleUrls: ['./selection.page.scss'],
 })
-  // eslint-disable-next-line @typescript-eslint/naming-convention
-  export class zonastatusPage {
+
+export class SelectionPage {
     constructor(public popoverCtrl: PopoverController) { }
     async notifications(ev: any) {
       const popover = await this.popoverCtrl.create({

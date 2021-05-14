@@ -56,25 +56,25 @@
  </ion-content>
   
   <footer>
-    <div><ion-tab-bar slot="bottom" >
-      <ion-tab-button href="tab3">
-        <ion-icon src="./assets/icon/home.svg"></ion-icon>
-       
-      </ion-tab-button>
+    <div>
+      <ion-tab-bar slot="bottom" >
+        <ion-tab-button href="opening-screen">
+          <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
     
-      <ion-tab-button href="tab1">
-        <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
-       
-      </ion-tab-button>
-    
-      <!-- <ion-tab-button href="tab2">
-        <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
-       
-      </ion-tab-button> -->
-
-      <ion-tab-button (click)="notifications()"> 
-        <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
-          <ion-badge id="notifications-badge" color="success">2</ion-badge>         
-      </ion-tab-button>
-    </ion-tab-bar> </div>
+        <ion-tab-button href="game">
+          <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
+<!--     
+        <ion-tab-button href="poll">
+          <ion-icon src="./assets/icon/poll2.svg" class="ion-padding-top"></ion-icon>
+         </ion-tab-button>  -->
+ 
+         <ion-tab-button (click)="notifications()"> 
+           <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
+             <ion-badge id="notifications-badge" color="success">2</ion-badge>         
+         </ion-tab-button>
+        
+      </ion-tab-bar>
+  </div>
   </footer>

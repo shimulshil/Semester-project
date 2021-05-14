@@ -78,38 +78,83 @@ h2{
   padding-left:16px;
   }
   
-  //--------------------------
-  // #container {
-  //   text-align: center;
-  
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  // }
-  
-  // #container strong {
-  //   font-size: 20px;
-  //   line-height: 26px;
-  // }
-  
-  // #container p {
-  //   font-size: 16px;
-  //   line-height: 22px;
-  
-  //   color: #8c8c8c;
-  
-  //   margin: 0;
-  // }
-  
-  // #container a {
-  //   text-decoration: none;
-  // }
-  
-  // #notifications-badge { 
-  //   background-color: #0dad9b;
-  // }
+  // @media (max-width: 600px) {
+    // .grid {
+    //     grid-template-columns: repeat(3, 100px);
+    //     grid-gap: 25px;
+    // }
+    // .padding{
+    //     padding-top: 31px;
+    //     padding-bottom: 35px;
+    //     padding-right: 19px;
+    //     margin-top: -27px;
+    // }
+    // .text{
+    //     font-style: italic;
+    //     font-weight: bolder;
+    //     text-align: center;
+    //     font-size: large;
+    // }
+
+    // .frame{
+    //     margin-top: -6px;
+    //     margin-bottom: -35px;
+    // }
+    // .game{
+    //     padding-bottom: 9px;
+    //     font-size: 16px;
+    //     color: black;
+    //     text-align: center;
+
+    // }
+    // .note{
+    //     margin-bottom: 117px;
+    //     margin-left: 249px;
+    //     text-align: center;
+    //     color: black;
+    //     margin-top: -127px;
+    //      }
+
+          
+          // ion-tab-button ion-icon:hover{
+          //   // css styling for hover state
+          //   color: #C4C4C4;
+          //   }   
+          
+          //   ion-tab-button ion-icon {
+              
+          //     color:#1e1e1e;
+              
+          //   }
+          
+          //   ion-fab-button ion-fab{
+          //     color: #C4C4C4;
+          //   }
+          //   ion-fab-button{
+          //     color: #C4C4C4;
+          //   }
+          
+          //   a.button-native{
+          //     color: #C4C4C4;
+          //   }
+            
+            ion-tab-button{
+              height: 40px;
+              color:black;
+          
+          }
+          
+          // a.ion-tab-button{
+          //   height: 40px;
+          //   color:#C4C4C4;
+          
+          // }
+          
+          // ion-avatar .img{
+          // width: 35px;
+          // padding-left:16px;
+          // }       
+// }
   
   
   

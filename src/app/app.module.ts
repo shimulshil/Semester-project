@@ -20,7 +20,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 @NgModule({
   declarations: [AppComponent, GameCardComponent,
     RestartDialogComponent, GameComponent, NotificationsComponent],
-  entryComponents: [],
+  entryComponents: [NotificationsComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,
     MatToolbarModule, MatButtonModule, MatIconModule, MatDialogModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
