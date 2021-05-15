@@ -6,7 +6,6 @@
     justify-content: center;
 }
 
-//  @media (max-width: 600px) {
     .grid {
         grid-template-columns: repeat(3, 100px);
         grid-gap: 25px;
@@ -44,16 +43,15 @@
          }
 
           
-          ion-tab-button ion-icon:hover{
-            // css styling for hover state
-            color: #C4C4C4;
-            }   
+    ion-tab-button ion-icon:hover{
+    // css styling for hover state
+      color: #C4C4C4;
+      }   
           
-            ion-tab-button ion-icon {
+    ion-tab-button ion-icon {
               
-              color:#1e1e1e;
-              
-            }
+      color:#1e1e1e;
+      }
           
             ion-fab-button ion-fab{
               color: #C4C4C4;
@@ -83,10 +81,4 @@
           padding-left:16px;
           }
           
-          
-          
-          
-          
-        
-// }
 
