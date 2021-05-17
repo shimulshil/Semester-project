@@ -43,7 +43,15 @@
       </ion-item>
     </ion-list>
     <ion-text ><p>If you want to know the actual inner clima, you must update the clima. </p></ion-text>
-    <ion-text>Last update <b>07-05-2021</b> at <b>09:11</b></ion-text>
+    <!-- <ion-text>Last update <b>07-05-2021</b> at <b>09:11</b></ion-text> -->
+    <ion-text>
+      <div>
+        <ion-label>
+          Last Update {{formattedDate}} at {{formattedTime}}
+        </ion-label>
+      </div>
+    </ion-text>
+
   </ion-col>
   </ion-row>
   </ion-grid>
@@ -59,7 +67,7 @@
   <footer>
     <div>
       <ion-tab-bar slot="bottom" >
-        <ion-tab-button routerLink="/opening-screen">
+        <ion-tab-button routerLink="/selection">
           <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
         </ion-tab-button>
     

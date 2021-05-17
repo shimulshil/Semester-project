@@ -39,7 +39,14 @@
       </ion-item>
     </ion-list>
     <div class="ion-padding">
-    <ion-text>Last update today <b>11-05-2021</b> at <b>10:11</b></ion-text> 
+    <!-- <ion-text>Last update today <b>11-05-2021</b> at <b>10:11</b></ion-text>  -->
+    <ion-text>
+      <div>
+        <ion-label>
+          Last Update {{formattedDate}} at {{formattedTime}}
+        </ion-label>
+      </div>
+    </ion-text>
   </div>
   </ion-col>
   </ion-row>
@@ -58,7 +65,7 @@
   <footer>
     <div>
       <ion-tab-bar slot="bottom" >
-        <ion-tab-button routerLink="/opening-screen">
+        <ion-tab-button routerLink="/selection">
           <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
         </ion-tab-button>
     
