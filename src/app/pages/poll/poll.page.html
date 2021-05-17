@@ -10,9 +10,8 @@
 
 <ion-content>
   
- <ion-card class="feedback-form ion-padding">
-          <div>
-                
+ <ion-card class="poll-form ion-padding">
+          <div>     
           <ion-radio-group value="change" >
           <ion-list-header>
             <ion-label>Do you want to change the climate?</ion-label>
@@ -30,22 +29,17 @@
             <ion-label>Yes</ion-label>
             <ion-radio slot="end" color="success" value="Yes"></ion-radio>
           </ion-item>
-
           <ion-item>
             <ion-label>No</ion-label>
             <ion-radio slot="end" color="tertiary" value="No"></ion-radio>
           </ion-item>
-
-          
         </ion-radio-group>
         </div>
- 
         <div class="action-button ion-padding">
             <ion-button size="large" class="vote-button" >Vote</ion-button>
             <ion-button size="large" class="result-button" routerLink="/pool-result">See Result</ion-button>
         </div>
   </ion-card>
-
 </ion-content>
 
 <footer>
