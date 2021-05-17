@@ -67,7 +67,11 @@ const routes: Routes = [
   {
     path: 'selection',
     loadChildren: () => import('./pages/selection/selection.module').then( m => m.SelectionPageModule)
+  },  {
+    path: 'pool-result',
+    loadChildren: () => import('./pool-result/pool-result.module').then( m => m.PoolResultPageModule)
   },
+
 
 
 ];
