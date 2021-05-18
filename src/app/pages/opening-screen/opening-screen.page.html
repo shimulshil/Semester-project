@@ -1,39 +1,39 @@
-<ion-header >
-  <ion-toolbar color="primary">
-    <ion-title size="medium">Mental Shower</ion-title>
+<!-- <ion-header >
+  <ion-toolbar>
+    <ion-title size="medium" style="text-align: center; font-weight: bold;">Mental Shower</ion-title>
     
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true" color="gray">
+<ion-content [fullscreen]="true">
+
+  <ion-title class="header">Mental Shower</ion-title>
+
   
- 
-
-  <ion-grid class="backg ion-padding-vertical">
-    
-    
+  <ion-grid class="backg ion-padding-vertical"> 
     <ion-row  >
-      
-      <ion-col></ion-col>
-        
+      <ion-col></ion-col>  
       <ion-col class="ion-align-items-center" >
         <div><ion-img routerLink="/welcome-screen" src="assets/icon/mental-shower-grey-60px_logo.svg"></ion-img> </div>
-        </ion-col>
-        <ion-col></ion-col>   
-  
-    
-    
-  </ion-row>
+      </ion-col>
+      <ion-col></ion-col>   
+    </ion-row>
   
   </ion-grid>
-    <ion-grid> 
-      <ion-row> 
-      <ion-col > <div> <ion-button routerLink="/selection" color="primary" expand="block">ENTER</ion-button></div></ion-col>
-     </ion-row>
-    </ion-grid>
+
+  <ion-grid> 
+    <ion-row> 
+      <ion-col >
+        <div> 
+          <ion-button routerLink="/selection" expand="block" class="button">ENTER</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   
-    
-  </ion-content>
+</ion-content>
+
+
 
     
   
