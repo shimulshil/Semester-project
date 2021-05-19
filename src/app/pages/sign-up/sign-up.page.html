@@ -45,8 +45,8 @@
                     </ion-item>
                 </div>
                 <div class="action-button">
-                    <ion-button (click)="createAccount()" [disabled]="SignupForm.invalid">Sign Up</ion-button>
-                    <h3 routerLink="/login">Already have a account? <span routerLink="/login">Log In</span></h3>
+                    <ion-button class="signup-button" (click)="createAccount()" [disabled]="SignupForm.invalid">Sign Up</ion-button>
+                    <h3>Already have a account? <span routerLink="/login">Log In</span></h3>
                 </div>
             </div>
         </form>
