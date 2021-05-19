@@ -5,7 +5,7 @@
 // home.page.ts
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { FirebaseService } from '../../services/firebase.service';
+import { FirebaseService } from '../../services/vote.service';
 
 interface VoteData {
   Name: string;

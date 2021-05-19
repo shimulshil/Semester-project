@@ -14,7 +14,6 @@ import { PollPage } from './poll.page';
     FormsModule,
     IonicModule,
     PollPageRoutingModule,
-    FormsModule,
     ReactiveFormsModule,
   ],
   declarations: [PollPage],
