@@ -1,11 +1,11 @@
 ion-content{
-    --background:#299487;
+    background:white
    }
 .header{
     // size="medium" style="text-align: center; font-weight: bold;"
     text-align: center;
     font-weight: bold;
-    color: azure;
+    color: black;
     padding-top: 30px;
 }
    ion-img {
@@ -16,7 +16,7 @@ ion-content{
    }
 
 .tool-bar-container{
-    background-color: #299487;
+    background-color:white;
 }
 .button{
     font-weight: bold;

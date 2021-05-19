@@ -7,38 +7,96 @@
      </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  
- <ion-card class="poll-form ion-padding">
-          <div>     
-          <ion-radio-group value="change" >
-          <ion-list-header>
-            <ion-label>Do you want to change the climate?</ion-label>
-          </ion-list-header>
-          <ion-card-content>
-          <div class="form-input">
-                <ion-icon name="person-circle-outline"></ion-icon>
-                <ion-item>
-                    <ion-label position="floating">Name</ion-label>
-                    <ion-input type="name"></ion-input>
-                </ion-item>
-            </div>
-            </ion-card-content>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+  <form [formGroup]="VoteForm" (ngSubmit)="CreateRecord()">
+    <ion-list-header>
+      <ion-label>Do you want to change the climate?</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input formControlName="Name"></ion-input>
+    </ion-item>
+
+    <ion-radio-group value="change" formControlName="Answer">
           <ion-item>
             <ion-label>Yes</ion-label>
-            <ion-radio slot="end" color="success" value="Yes"></ion-radio>
+            <ion-radio  slot="end" color="success" value="Yes"></ion-radio>
           </ion-item>
           <ion-item>
             <ion-label>No</ion-label>
             <ion-radio slot="end" color="tertiary" value="No"></ion-radio>
           </ion-item>
         </ion-radio-group>
-        </div>
-        <div class="action-button ion-padding">
-            <ion-button size="large" class="vote-button" >Vote</ion-button>
-            <ion-button size="large" class="result-button" routerLink="/pool-result">See Result</ion-button>
-        </div>
+
+      <div class="action-button">
+      <ion-button (click)="CreateRecord()" [disabled]="VoteForm.invalid">
+        Send Vote
+      </ion-button>
+      </div>
+
+  </form>
+</ion-card>
+
+  <ion-card *ngFor="let item of VoteList" color="primary">
+    <span *ngIf="!item.isEdit; else elseBlock">
+      <ion-card-header>
+        <ion-card-title>{{item.Name}}</ion-card-title>
+        <ion-card-subtitle>Vote: {{item.Answer}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+
+        <ion-button shape="round" color="secondary" size="small" (click)="EditRecord(item)">
+          <ion-icon size="small" slot="icon-only" name="create"></ion-icon>
+
+        </ion-button>
+        <ion-button shape="round" color="danger" size="small" (click)="RemoveRecord(item.id)">
+          <ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
+
+        </ion-button>
+      </ion-card-content>
+    </span>
+    <ng-template #elseBlock>
+      <ion-card-header>
+        <ion-card-title>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                Edit
+              </ion-col>
+              <ion-col>
+                <ion-button fill="solid" color="medium" size="small" (click)="item.isEdit = false">
+                  Cancel
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="solid" color="success" size="small" (click)="UpdateRecord(item)">
+                  Update
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label><strong>Name</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditName"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label><strong>Answer</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditAnswer"></ion-input>
+        </ion-item>
+      </ion-card-content>
+    </ng-template>
+    
   </ion-card>
+  <div class="action-button">
+      <ion-button routerLink="/change-clima">
+       Change Climate
+      </ion-button>
+    </div>
 </ion-content>
 
 <footer>
