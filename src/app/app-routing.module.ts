@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 // import { MemorygameComponent } from './memorygame/memorygame.component';
 import { GameComponent } from './game/game.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: 'game', component: GameComponent },
@@ -87,6 +88,7 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () =>
       import('./pages/profile/profile.module').then((m) => m.ProfilePageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'help',

@@ -53,7 +53,7 @@ export class SignUpPage implements OnInit {
               loading.dismiss();
               this.toast(
                 'Registration Sucess! Please Check Your Email!',
-                'sucess'
+                'primary'
               );
               this.router.navigate(['./login']);
             })

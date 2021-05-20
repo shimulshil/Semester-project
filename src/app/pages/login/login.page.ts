@@ -26,7 +26,7 @@ export class LoginPage implements OnInit {
     } else {
       this.toast('Please enter your email & password!', 'warning');
     }
-    this.router.navigate(['/actual-status']);
+    this.router.navigate(['/profile']);
   }
 
   async toast(message, status) {
@@ -34,6 +34,7 @@ export class LoginPage implements OnInit {
       message: message,
       color: status,
       position: 'top',
+      duration: 2000,
     });
     toast.present();
   }
