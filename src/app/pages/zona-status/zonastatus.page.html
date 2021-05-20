@@ -43,34 +43,38 @@
       </ion-item>
     </ion-list>
     <ion-text ><p>If you want to know the actual inner clima, you must update the clima. </p></ion-text>
-    <ion-text>Last update <b>07-05-2021</b> at <b>09:11</b></ion-text>
+    <!-- <ion-text>Last update <b>07-05-2021</b> at <b>09:11</b></ion-text> -->
+    <ion-text>
+      <div>
+        <ion-label>
+          Last Update {{formattedDate}} at {{formattedTime}}
+        </ion-label>
+      </div>
+    </ion-text>
+
   </ion-col>
   </ion-row>
   </ion-grid>
   
     <div class="ion-padding"> 
      
-  <ion-button expand="block" routerLink="/temp-sum" >UPDATE CLIMA</ion-button>
-  <ion-text  ><p>*For update the clima you need first  <b routerLink="/sign-up"> SIGN UP</b> as user and  <b routerLink="/login">LOGIN </b> </p></ion-text>
+  <ion-button expand="block" routerLink="/sign-up" >UPDATE CLIMA</ion-button>
+  <ion-text  ><p>*For update the clima you need first  <b routerLink="/sign-up" class="color"> SIGN UP</b> as user and  <b routerLink="/login" class="color">LOGIN </b> </p></ion-text>
   </div>
   </ion-content>
   
 
   <footer>
-    <div><ion-tab-bar slot="bottom" >
-      <ion-tab-button href="tab3">
-        <ion-icon src="./assets/icon/home.svg"></ion-icon>
-       
-      </ion-tab-button>
+    <div>
+      <ion-tab-bar slot="bottom" >
+        <ion-tab-button routerLink="/selection">
+          <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
     
-      <ion-tab-button href="tab1">
-        <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
-       
-      </ion-tab-button>
-    
-      <ion-tab-button href="tab2">
-        <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
-       
-      </ion-tab-button>
-    </ion-tab-bar> </div>
+        <ion-tab-button routerLink="/game">
+          <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
+        </ion-tab-button>
+ 
+      </ion-tab-bar>
+  </div>
   </footer>

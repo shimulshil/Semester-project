@@ -1,0 +1,29 @@
+ion-list { 
+    padding: 10px; 
+   &.list-ios {  
+       margin-bottom: 0;  
+      
+   }  
+} 
+ion-list-header { 
+   background-color: #000000;
+   color: #fff;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+ion-icon{
+   color:floralwhite;
+}
+
+
+ion-icon:hover{
+   color:#33c5b4;
+   a:visited:after {
+   color: #5260ff;
+     }
+}
+
+
+

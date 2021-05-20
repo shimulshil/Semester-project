@@ -54,7 +54,10 @@
 </ion-grid>
 <div > 
     
-  <ion-button expand="block" routerLink="/tab3" >RESET CLIMA</ion-button>
+  <ion-button expand="block" routerLink="/actual-status" >RESET CLIMATE</ion-button>
+  <!--Routing for game-->  
+  <!-- <ion-col > <div> <ion-button routerLink="/game" color="primary" expand="block">Game</ion-button></div></ion-col> -->
+<!--Routing for game--> 
   <ion-text class="instructions" >*The changes will take some minutes, will pop out a notification</ion-text>
   </div>
   
@@ -66,20 +69,21 @@ dualRange.value = { lower: 33, upper: 60 };
     
 </ion-content>
 <footer>
-  <div><ion-tab-bar slot="bottom" >
-    <ion-tab-button href="tab3">
-      <ion-icon src="./assets/icon/home.svg"></ion-icon>
-     
-    </ion-tab-button>
+  <div>
+    <ion-tab-bar slot="bottom" >
+      <ion-tab-button routerLink="/selection">
+        <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
   
-    <ion-tab-button href="tab1">
-      <ion-icon src="./assets/icon/temperature.svg"></ion-icon>
-     
-    </ion-tab-button>
-  
-    <ion-tab-button href="tab2">
-      <ion-icon src="./assets/icon/poll2.svg"></ion-icon>
-     
-    </ion-tab-button>
-  </ion-tab-bar> </div>
+      <ion-tab-button routerLink="/game">
+        <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
+
+       <ion-tab-button (click)="notifications()"> 
+         <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
+           <ion-badge id="notifications-badge" color="success">2</ion-badge>         
+       </ion-tab-button>
+      
+    </ion-tab-bar>
+</div>
 </footer>
