@@ -1,10 +1,11 @@
 <ion-header  >
   <ion-toolbar >
+    <div class="display">
     <ion-avatar >
       <img src="assets\icon\grey70_logo-70hWhite.svg">
-     </ion-avatar> 
-  <ion-title class="title">Mental Shower</ion-title>
-  
+    </ion-avatar> 
+    <ion-title class="title">Mental Shower</ion-title>
+  </div>
   </ion-toolbar>
  </ion-header>
   
@@ -35,11 +36,11 @@
     <ion-icon slot="start"src="../assets/icon/room.svg" ></ion-icon>
     <ion-label >Rooms</ion-label>
     <ion-select interface="popover" >
-      <ion-select-option value="room1">R-1</ion-select-option>
-      <ion-select-option value="room2">R- 2</ion-select-option>
-      <ion-select-option value="room3">R- 3</ion-select-option>
-      <ion-select-option value="room4">R- 4</ion-select-option>
-      
+      <ion-select-option value="Room1">R-1</ion-select-option>
+      <ion-select-option value="Room2">R-2</ion-select-option>
+      <ion-select-option value="Room3">R-3</ion-select-option>
+      <ion-select-option value="Room4">R-4</ion-select-option>
+    <!-- <ion-select-option *ngFor="let room of rooms"  > {{rooms}} </ion-select-option> -->
     </ion-select>
   </ion-item>
   <ion-text><p>Inside the room, you need select your Zone that is the number of the table.</p></ion-text>
@@ -69,8 +70,7 @@
 </ion-row>
 </ion-grid>
 
-<ion-button routerLink="/zona-status"  expand="block" >
-  SAVE</ion-button>
+<ion-button routerLink="/zona-status"  expand="block" style="font-weight: bold;" >SAVE</ion-button>
 </ion-content>
 <footer>
   <div>

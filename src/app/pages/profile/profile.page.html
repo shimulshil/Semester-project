@@ -1,27 +1,28 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-title>profile</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  
-
-</ion-content> -->
 <ion-header  >
   <ion-toolbar >
-    <ion-avatar >
-      <img src="assets\icon\grey70_logo-70hWhite.svg">
-     </ion-avatar> 
-  <ion-title class="title">Mental Shower/Profile</ion-title>
+    <ion-title class="title">Mental Shower</ion-title>
+  </ion-toolbar>
+ </ion-header>
   
+ <ion-content [fullscreen]="true" class="ion-padding">
+  <div class="text-top">
+  <ion-text><h3><b>Profile..</b></h3></ion-text>
+  <ion-text><p>Welcome to Mental Shower User Profile</p></ion-text>
+</div>
   
-<footer>
+
+
+<footer class="footer">
   <div>
     <ion-tab-bar slot="bottom" >
       <ion-tab-button routerLink="/selection">
         <ion-icon src="./assets/icon/home2.svg" class="ion-padding-top"></ion-icon>
       </ion-tab-button>
+  
+      <ion-tab-button routerLink="/game">
+        <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
+      </ion-tab-button>
+      
     </ion-tab-bar>
 </div>
 </footer>
@@ -29,4 +30,3 @@
 
 
  
-
