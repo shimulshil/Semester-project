@@ -21,19 +21,20 @@
 
     <ion-radio-group value="change" formControlName="Answer">
           <ion-item>
-            <ion-label>Yes</ion-label>
-            <ion-radio  slot="end" color="success" value="Yes"></ion-radio>
+            <ion-label><ion-icon name="thumbs-up" color= "primary" size=large></ion-icon> Yes</ion-label>
+            <ion-radio slot="end" color="success" value="Yes"></ion-radio>
           </ion-item>
           <ion-item>
-            <ion-label>No</ion-label>
+            <ion-label><ion-icon name="thumbs-down" color= "medium" size=large ></ion-icon> No</ion-label>
             <ion-radio slot="end" color="tertiary" value="No"></ion-radio>
           </ion-item>
         </ion-radio-group>
 
-      <div class="action-button">
-      <ion-button (click)="CreateRecord()" [disabled]="VoteForm.invalid">
+      <div class="action-button" class=ion-padding >
+      <ion-button expand="block"   (click)="CreateRecord()" [disabled]="VoteForm.invalid">
         Send Vote
       </ion-button>
+      
       </div>
 
   </form>
@@ -92,8 +93,8 @@
     </ng-template>
     
   </ion-card>
-  <div class="action-button">
-      <ion-button routerLink="/change-clima">
+  <div class="action-button" class=ion-padding>
+      <ion-button routerLink="/change-clima" expand="block" >
        Change Climate
       </ion-button>
     </div>

@@ -1,8 +1,3 @@
-/* eslint-disable prefer-const */
-/* eslint-disable @typescript-eslint/dot-notation */
-/* eslint-disable arrow-body-style */
-/* eslint-disable @typescript-eslint/naming-convention */
-// home.page.ts
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { FirebaseService } from '../../services/firebase.service';

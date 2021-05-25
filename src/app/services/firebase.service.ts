@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-// firebase.service.ts
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 

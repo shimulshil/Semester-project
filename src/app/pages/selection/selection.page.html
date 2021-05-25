@@ -3,9 +3,7 @@
     <ion-avatar >
       <img src="assets\icon\grey70_logo-70hWhite.svg">
      </ion-avatar> 
-  <ion-title>
- Mental Shower
-  </ion-title>
+  <ion-title class="title">Mental Shower</ion-title>
   
   </ion-toolbar>
  </ion-header>
@@ -17,13 +15,10 @@
     </ion-fab-button>
     <ion-fab-list>
       <ion-fab-button color="light">
-        <ion-icon name="person"></ion-icon>
+        <ion-icon name="person" routerLink="/profile"></ion-icon>
       </ion-fab-button>
-      <ion-fab-button color="light">
-        <ion-icon name="cash"  href="the-game"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button color="light">
-        <ion-icon name="help"></ion-icon>
+     <ion-fab-button color="light">
+     <ion-icon name="help" routerLink="/help"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
@@ -32,18 +27,19 @@
   <ion-text><p>Welcome to Mental Shower by Vent2U</p></ion-text>
 </div>
   <ion-grid > 
+    
     <ion-row class="maria-tab1"> 
   <ion-col> 
    <ion-text><p>You need to select a room, the information will be at the door.</p></ion-text>   
   <ion-item>
     <ion-icon slot="start"src="../assets/icon/room.svg" ></ion-icon>
     <ion-label >Rooms</ion-label>
-    <ion-select interface="popover">
+    <ion-select interface="popover" >
       <ion-select-option value="room1">R-1</ion-select-option>
       <ion-select-option value="room2">R- 2</ion-select-option>
       <ion-select-option value="room3">R- 3</ion-select-option>
       <ion-select-option value="room4">R- 4</ion-select-option>
-      <ion-select-option value="cafeteria">Cafeteria</ion-select-option>
+      
     </ion-select>
   </ion-item>
   <ion-text><p>Inside the room, you need select your Zone that is the number of the table.</p></ion-text>
@@ -86,11 +82,6 @@
       <ion-tab-button routerLink="/game">
         <ion-icon src="./assets/icon/game.svg" class="ion-padding-top"></ion-icon>
       </ion-tab-button>
-
-       <!-- <ion-tab-button (click)="notifications()"> 
-         <ion-icon name="chatbox-outline" class="ion-padding-top"></ion-icon>  
-           <ion-badge id="notifications-badge" color="success">2</ion-badge>         
-       </ion-tab-button> -->
       
     </ion-tab-bar>
 </div>

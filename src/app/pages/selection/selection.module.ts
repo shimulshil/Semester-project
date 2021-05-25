@@ -17,4 +17,8 @@ import { SelectionPage } from './selection.page';
   ],
   declarations: [SelectionPage]
 })
-export class SelectionPageModule {}
+export class SelectionPageModule {
+
+  //RoomsArray=[]
+
+}
