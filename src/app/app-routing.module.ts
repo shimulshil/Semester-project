@@ -57,6 +57,7 @@ const routes: Routes = [
       import('./pages/actual-status/actualstatus.module').then(
         (m) => m.actualstatusPageModule
       ),
+    canActivate: [AuthGuard],
   },
 
   {
