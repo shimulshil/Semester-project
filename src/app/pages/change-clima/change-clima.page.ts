@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { PopoverController } from '@ionic/angular';
-//import { NotificationsComponent } from 'src/app/notifications/notifications.component';
+import { PopoverController } from '@ionic/angular';
+import { NotificationsComponent } from 'src/app/notifications/notifications.component';
 import { ClimateTempService } from 'src/app/services/climate-temp.service';
 
 @Component({
